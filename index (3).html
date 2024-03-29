@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Under Construction</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f5f5f5;
+                text-align: center;
+                padding: 50px;
+            }
+            .container {
+                max-width: 600px;
+                margin: 0 auto;
+                background-color: #ffffff;
+                border-radius: 10px;
+                padding: 20px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            h1 {
+                font-size: 24px;
+                color: #333;
+            }
+            p {
+                font-size: 16px;
+                color: #777;
+            }
+            img {
+                max-width: 100%;
+                border-radius: 5px;
+                margin-top: 20px;
+            }
+            .quote {
+                font-style: italic;
+                margin-top: 20px;
+            }
+            .footer {
+                font-size: 14px;
+                color: #999;
+                margin-top: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Website Under Construction</h1>
+            <p>We're working hard to bring you something amazing. Stay tuned!</p>
+            <img src="your-beautiful-image.jpg" alt="Under Construction" />
+            <div class="quote">
+                <!-- JavaScript will populate this with a random quote -->
+            </div>
+        </div>
+        <div class="footer">
+            Total Visits: <span id="totalVisits">Loading...</span> | Daily Visits: <span id="dailyVisits">Loading...</span>
+        </div>
+        <script>
+            // JavaScript to fetch and display random quotes
+            const quotes = [
+                "Life is beautiful when you find love in the smallest moments.",
+                "To love and be loved is to feel the sun from both sides.",
+                "The greatest treasures are those invisible to the eye but found by the heart.",
+                // Add more quotes here...
+            ];
+
+            const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+            document.querySelector(".quote").textContent = randomQuote;
+
+            // Fetch total and daily visits (you can replace with actual data)
+            document.getElementById("totalVisits").textContent = "12345"; // Replace with actual total visits
+            document.getElementById("dailyVisits").textContent = "678"; // Replace with actual daily visits
+        </script>
+    </body>
+</html>
